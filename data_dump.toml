@@ -68,8 +68,8 @@ vram = 0x80000450
 size = 0x72A40
 
 symbols = [
-    { name = "main_VRAM", vram = 0x80000450 },
     { name = "entry_VRAM_END", vram = 0x80000450 },
+    { name = "main_VRAM", vram = 0x80000450 },
     { name = "main_TEXT_START", vram = 0x80000450 },
     { name = ".L8003CCA8", vram = 0x8003CCA8 },
     { name = ".L8003CCB4", vram = 0x8003CCB4 },
@@ -82,14 +82,14 @@ symbols = [
     { name = ".L8003CF28", vram = 0x8003CF28 },
     { name = "func_8003CFA4", vram = 0x8003CFA4 },
     { name = "main_TEXT_END", vram = 0x80049EF0 },
-    { name = "rspbootTextStart", vram = 0x80049EF0 },
     { name = "main_DATA_START", vram = 0x80049EF0 },
-    { name = "rspbootTextEnd", vram = 0x80049FC0 },
+    { name = "rspbootTextStart", vram = 0x80049EF0 },
     { name = "gspFast3DTextStart", vram = 0x80049FC0 },
-    { name = "gspFast3DTextEnd", vram = 0x8004B3F0 },
+    { name = "rspbootTextEnd", vram = 0x80049FC0 },
     { name = "aspMainTextStart", vram = 0x8004B3F0 },
-    { name = "D_8004C210", vram = 0x8004C210 },
+    { name = "gspFast3DTextEnd", vram = 0x8004B3F0 },
     { name = "aspMainTextEnd", vram = 0x8004C210 },
+    { name = "D_8004C210", vram = 0x8004C210 },
     { name = "D_8004C230", vram = 0x8004C230 },
     { name = "D_8004C270", vram = 0x8004C270 },
     { name = "D_8004C274", vram = 0x8004C274 },
@@ -721,8 +721,8 @@ symbols = [
     { name = "D_80070DD0", vram = 0x80070DD0 },
     { name = "D_80070E20", vram = 0x80070E20 },
     { name = "D_80070E70", vram = 0x80070E70 },
-    { name = "main_RODATA_START", vram = 0x80070EF0 },
     { name = "main_DATA_END", vram = 0x80070EF0 },
+    { name = "main_RODATA_START", vram = 0x80070EF0 },
     { name = "D_80070F10", vram = 0x80070F10 },
     { name = "D_80070F18", vram = 0x80070F18 },
     { name = "D_80070F1C", vram = 0x80070F1C },
@@ -965,7 +965,6 @@ symbols = [
     { name = "jtbl_80071714", vram = 0x80071714 },
     { name = "jtbl_80071730", vram = 0x80071730 },
     { name = "D_80071750", vram = 0x80071750 },
-    { name = "jtbl_80071764", vram = 0x80071764 },
     { name = "jtbl_80071780", vram = 0x80071780 },
     { name = "jtbl_800717C4", vram = 0x800717C4 },
     { name = "jtbl_80071814", vram = 0x80071814 },
@@ -1022,8 +1021,8 @@ symbols = [
     { name = "D_800723C0", vram = 0x800723C0 },
     { name = "D_800723C8", vram = 0x800723C8 },
     { name = "gspFast3DDataStart", vram = 0x800723D0 },
-    { name = "D_80072BD0", vram = 0x80072BD0 },
     { name = "gspFast3DDataEnd", vram = 0x80072BD0 },
+    { name = "D_80072BD0", vram = 0x80072BD0 },
     { name = "main_RODATA_END", vram = 0x80072E90 },
 ]
 
@@ -1298,8 +1297,8 @@ symbols = [
     { name = "D_80085BC4", vram = 0x80085BC4 },
     { name = "D_80085BC8", vram = 0x80085BC8 },
     { name = "D_80085BCC", vram = 0x80085BCC },
-    { name = "D_80085BD0", vram = 0x80085BD0 },
-    { name = "D_800862D0", vram = 0x800862D0 },
+    { name = "gActorShadows", vram = 0x80085BD0 },
+    { name = "gNumShadowsToDrawThisFrame", vram = 0x800862D0 },
     { name = "D_800862E0", vram = 0x800862E0 },
     { name = "D_800869A0", vram = 0x800869A0 },
     { name = "D_800869A8", vram = 0x800869A8 },
@@ -1537,11 +1536,9 @@ symbols = [
     { name = "D_8008FD50", vram = 0x8008FD50 },
     { name = "D_8008FD58", vram = 0x8008FD58 },
     { name = "D_80090398", vram = 0x80090398 },
-    { name = "D_800903B8", vram = 0x800903B8 },
-    { name = "D_800903C8", vram = 0x800903C8 },
-    { name = "D_8009045F", vram = 0x8009045F },
     { name = "D_80090460", vram = 0x80090460 },
     { name = "D_800904E0", vram = 0x800904E0 },
+    { name = "D_800905A8", vram = 0x800905A8 },
     { name = "D_800905C0", vram = 0x800905C0 },
     { name = "D_800905C4", vram = 0x800905C4 },
     { name = "D_800905C8", vram = 0x800905C8 },
@@ -1572,7 +1569,6 @@ symbols = [
     { name = "D_80092A92", vram = 0x80092A92 },
     { name = "D_80092AA0", vram = 0x80092AA0 },
     { name = "gPad", vram = 0x80092AA8 },
-    { name = "D_80092AAD", vram = 0x80092AAD },
     { name = "D_80092AC0", vram = 0x80092AC0 },
     { name = "D_80092CC0", vram = 0x80092CC0 },
     { name = "D_80092CC8", vram = 0x80092CC8 },
@@ -1662,13 +1658,65 @@ symbols = [
 name = ".unkData2"
 rom = 0x00077560
 vram = 0x01003AD0
-size = 0xCD3E60
+size = 0x7FA3A0
 
 symbols = [
     { name = "unkData2_DATA_START", vram = 0x01003AD0 },
     { name = "unkData2_VRAM", vram = 0x01003AD0 },
-    { name = "unkData2_DATA_END", vram = 0x01CD7930 },
-    { name = "unkData2_VRAM_END", vram = 0x01CD7930 },
+    { name = "unkData2_DATA_END", vram = 0x017FDE70 },
+    { name = "unkData2_VRAM_END", vram = 0x017FDE70 },
+]
+
+[[section]]
+name = ".UnkModelData0"
+rom = 0x00871900
+vram = 0x017FDE70
+size = 0x2620
+
+symbols = [
+    { name = "UnkModelData0_VRAM", vram = 0x017FDE70 },
+    { name = "UnkModelData0_DATA_START", vram = 0x017FDE70 },
+    { name = "UnkModelData0_DATA_END", vram = 0x01800490 },
+    { name = "UnkModelData0_VRAM_END", vram = 0x01800490 },
+]
+
+[[section]]
+name = ".unkData6"
+rom = 0x00873F20
+vram = 0x01800490
+size = 0x1FE6B0
+
+symbols = [
+    { name = "unkData6_VRAM", vram = 0x01800490 },
+    { name = "unkData6_DATA_START", vram = 0x01800490 },
+    { name = "unkData6_VRAM_END", vram = 0x019FEB40 },
+    { name = "unkData6_DATA_END", vram = 0x019FEB40 },
+]
+
+[[section]]
+name = ".NpcDataGlobal"
+rom = 0x00A725D0
+vram = 0x019FEB40
+size = 0x7BC0
+
+symbols = [
+    { name = "NpcDataGlobal_VRAM", vram = 0x019FEB40 },
+    { name = "NpcDataGlobal_DATA_START", vram = 0x019FEB40 },
+    { name = "NpcDataGlobal_VRAM_END", vram = 0x01A06700 },
+    { name = "NpcDataGlobal_DATA_END", vram = 0x01A06700 },
+]
+
+[[section]]
+name = ".unkData7"
+rom = 0x00A7A190
+vram = 0x01A06700
+size = 0x2D1230
+
+symbols = [
+    { name = "unkData7_VRAM", vram = 0x01A06700 },
+    { name = "unkData7_DATA_START", vram = 0x01A06700 },
+    { name = "unkData7_VRAM_END", vram = 0x01CD7930 },
+    { name = "unkData7_DATA_END", vram = 0x01CD7930 },
 ]
 
 [[section]]
@@ -2269,32 +2317,34 @@ vram = 0x00000000
 size = 0x0
 
 symbols = [
+    { name = "ovl_ending_RODATA_SIZE", vram = 0x00000000 },
+    { name = "ovl_title_BSS_SIZE", vram = 0x00000000 },
+    { name = "entry_DATA_SIZE", vram = 0x00000000 },
+    { name = "header_ROM_START", vram = 0x00000000 },
+    { name = "ovl_intro_BSS_SIZE", vram = 0x00000000 },
+    { name = "entry_BSS_SIZE", vram = 0x00000000 },
     { name = "entry_RODATA_SIZE", vram = 0x00000000 },
     { name = "ovl_ending_BSS_SIZE", vram = 0x00000000 },
-    { name = "header_ROM_START", vram = 0x00000000 },
-    { name = "entry_DATA_SIZE", vram = 0x00000000 },
-    { name = "ovl_title_BSS_SIZE", vram = 0x00000000 },
-    { name = "ovl_ending_RODATA_SIZE", vram = 0x00000000 },
-    { name = "entry_BSS_SIZE", vram = 0x00000000 },
-    { name = "ovl_intro_BSS_SIZE", vram = 0x00000000 },
     { name = "ovl_intro_RODATA_SIZE", vram = 0x00000030 },
     { name = "boot_ROM_START", vram = 0x00000040 },
-    { name = "header_ROM_END", vram = 0x00000040 },
     { name = "header_DATA_SIZE", vram = 0x00000040 },
+    { name = "header_ROM_END", vram = 0x00000040 },
     { name = "entry_TEXT_SIZE", vram = 0x00000050 },
     { name = "ovl_title_RODATA_SIZE", vram = 0x00000060 },
     { name = "boot_DATA_SIZE", vram = 0x00000FC0 },
-    { name = "boot_ROM_END", vram = 0x00001000 },
     { name = "entry_ROM_START", vram = 0x00001000 },
+    { name = "boot_ROM_END", vram = 0x00001000 },
     { name = "main_ROM_START", vram = 0x00001050 },
     { name = "entry_ROM_END", vram = 0x00001050 },
     { name = "SE_ctl_DATA_SIZE", vram = 0x00001CC0 },
     { name = "main_RODATA_SIZE", vram = 0x00001FA0 },
+    { name = "UnkModelData0_DATA_SIZE", vram = 0x00002620 },
     { name = "instrument_ctl_DATA_SIZE", vram = 0x00002E10 },
     { name = "ovl_title_TEXT_SIZE", vram = 0x00003110 },
     { name = "ovl_ending_TEXT_SIZE", vram = 0x000035A0 },
     { name = "unkData_DATA_SIZE", vram = 0x00003AD0 },
     { name = "ovl_intro_TEXT_SIZE", vram = 0x00006200 },
+    { name = "NpcDataGlobal_DATA_SIZE", vram = 0x00007BC0 },
     { name = "unkData4_DATA_SIZE", vram = 0x00011170 },
     { name = "ovl_title_DATA_SIZE", vram = 0x00017BC0 },
     { name = "unkData5_DATA_SIZE", vram = 0x0001E400 },
@@ -2307,65 +2357,75 @@ symbols = [
     { name = "ovl_ending_DATA_SIZE", vram = 0x00053A20 },
     { name = "ovl_intro_DATA_SIZE", vram = 0x0005FFF0 },
     { name = "rompad_DATA_SIZE", vram = 0x0006BC80 },
-    { name = "main_ROM_END", vram = 0x00073A90 },
-    { name = "D_73A90", vram = 0x00073A90 },
     { name = "unkData_ROM_START", vram = 0x00073A90 },
+    { name = "D_73A90", vram = 0x00073A90 },
+    { name = "main_ROM_END", vram = 0x00073A90 },
+    { name = "unkData_ROM_END", vram = 0x00077560 },
     { name = "D_77560", vram = 0x00077560 },
     { name = "unkData2_ROM_START", vram = 0x00077560 },
-    { name = "unkData_ROM_END", vram = 0x00077560 },
     { name = "D_87360", vram = 0x00087360 },
     { name = "SE_tbl_DATA_SIZE", vram = 0x000A46A0 },
     { name = "D_CAF50", vram = 0x000CAF50 },
+    { name = "unkData6_DATA_SIZE", vram = 0x001FE6B0 },
+    { name = "unkData7_DATA_SIZE", vram = 0x002D1230 },
     { name = "D_3E3200", vram = 0x003E3200 },
     { name = "D_3F3D10", vram = 0x003F3D10 },
+    { name = "unkData2_DATA_SIZE", vram = 0x007FA3A0 },
     { name = "D_86B830", vram = 0x0086B830 },
     { name = "D_871900", vram = 0x00871900 },
+    { name = "UnkModelData0_ROM_START", vram = 0x00871900 },
+    { name = "unkData2_ROM_END", vram = 0x00871900 },
+    { name = "UnkModelData0_ROM_END", vram = 0x00873F20 },
+    { name = "unkData6_ROM_START", vram = 0x00873F20 },
     { name = "D_873F20", vram = 0x00873F20 },
     { name = "D_A725D0", vram = 0x00A725D0 },
+    { name = "NpcDataGlobal_ROM_START", vram = 0x00A725D0 },
+    { name = "unkData6_ROM_END", vram = 0x00A725D0 },
+    { name = "unkData7_ROM_START", vram = 0x00A7A190 },
+    { name = "NpcDataGlobal_ROM_END", vram = 0x00A7A190 },
     { name = "D_A7A190", vram = 0x00A7A190 },
-    { name = "unkData2_DATA_SIZE", vram = 0x00CD3E60 },
     { name = "D_D305E0", vram = 0x00D305E0 },
     { name = "D_D3BE40", vram = 0x00D3BE40 },
     { name = "D_D3E240", vram = 0x00D3E240 },
     { name = "D_D3E2C0", vram = 0x00D3E2C0 },
-    { name = "unkData2_ROM_END", vram = 0x00D4B3C0 },
+    { name = "unkData7_ROM_END", vram = 0x00D4B3C0 },
     { name = "D_D4B3C0", vram = 0x00D4B3C0 },
     { name = "unkData3_ROM_START", vram = 0x00D4B3C0 },
-    { name = "unkData4_ROM_START", vram = 0x00D77380 },
-    { name = "unkData3_ROM_END", vram = 0x00D77380 },
     { name = "D_D77380", vram = 0x00D77380 },
+    { name = "unkData3_ROM_END", vram = 0x00D77380 },
+    { name = "unkData4_ROM_START", vram = 0x00D77380 },
+    { name = "D_D884F0", vram = 0x00D884F0 },
     { name = "unkData5_ROM_START", vram = 0x00D884F0 },
     { name = "unkData4_ROM_END", vram = 0x00D884F0 },
-    { name = "D_D884F0", vram = 0x00D884F0 },
     { name = "D_D88AF0", vram = 0x00D88AF0 },
-    { name = "D_DA68F0", vram = 0x00DA68F0 },
-    { name = "unkData5_ROM_END", vram = 0x00DA68F0 },
     { name = "ovl_title_ROM_START", vram = 0x00DA68F0 },
-    { name = "ovl_title_ROM_END", vram = 0x00DC1620 },
+    { name = "unkData5_ROM_END", vram = 0x00DA68F0 },
+    { name = "D_DA68F0", vram = 0x00DA68F0 },
     { name = "ovl_intro_ROM_START", vram = 0x00DC1620 },
     { name = "D_DC1620", vram = 0x00DC1620 },
-    { name = "D_E27840", vram = 0x00E27840 },
-    { name = "ovl_ending_ROM_START", vram = 0x00E27840 },
+    { name = "ovl_title_ROM_END", vram = 0x00DC1620 },
     { name = "ovl_intro_ROM_END", vram = 0x00E27840 },
-    { name = "D_E7E800", vram = 0x00E7E800 },
-    { name = "ovl_ending_ROM_END", vram = 0x00E7E800 },
+    { name = "ovl_ending_ROM_START", vram = 0x00E27840 },
+    { name = "D_E27840", vram = 0x00E27840 },
     { name = "instrument_ctl_ROM_START", vram = 0x00E7E800 },
+    { name = "ovl_ending_ROM_END", vram = 0x00E7E800 },
+    { name = "D_E7E800", vram = 0x00E7E800 },
+    { name = "instrument_tbl_ROM_START", vram = 0x00E81610 },
     { name = "D_E81610", vram = 0x00E81610 },
     { name = "instrument_ctl_ROM_END", vram = 0x00E81610 },
-    { name = "instrument_tbl_ROM_START", vram = 0x00E81610 },
-    { name = "unk_tbl_ROM_START", vram = 0x00EBABD0 },
     { name = "instrument_tbl_ROM_END", vram = 0x00EBABD0 },
+    { name = "unk_tbl_ROM_START", vram = 0x00EBABD0 },
     { name = "D_EBABD0", vram = 0x00EBABD0 },
     { name = "unk_tbl_ROM_END", vram = 0x00EEE020 },
     { name = "D_EEE020", vram = 0x00EEE020 },
     { name = "SE_ctl_ROM_START", vram = 0x00EEE020 },
-    { name = "SE_tbl_ROM_START", vram = 0x00EEFCE0 },
-    { name = "D_EEFCE0", vram = 0x00EEFCE0 },
     { name = "SE_ctl_ROM_END", vram = 0x00EEFCE0 },
-    { name = "rompad_ROM_START", vram = 0x00F94380 },
+    { name = "D_EEFCE0", vram = 0x00EEFCE0 },
+    { name = "SE_tbl_ROM_START", vram = 0x00EEFCE0 },
     { name = "SE_tbl_ROM_END", vram = 0x00F94380 },
-    { name = "rompad_ROM_END", vram = 0x01000000 },
+    { name = "rompad_ROM_START", vram = 0x00F94380 },
     { name = "__romPos", vram = 0x01000000 },
+    { name = "rompad_ROM_END", vram = 0x01000000 },
     { name = "D_1000010", vram = 0x01000010 },
     { name = "D_10000A0", vram = 0x010000A0 },
     { name = "D_10000E8", vram = 0x010000E8 },
